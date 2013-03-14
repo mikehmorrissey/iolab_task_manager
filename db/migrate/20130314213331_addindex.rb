@@ -6,6 +6,6 @@ class Addindex < ActiveRecord::Migration
 
   def down
   	remove_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  remove_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+  	remove_index "users", ["remember_token"], :name => "index_users_on_remember_token"
   end
 end
