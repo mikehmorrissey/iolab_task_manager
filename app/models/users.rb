@@ -1,6 +1,8 @@
 class Users < ActiveRecord::Base
   attr_accessible :email, :name, :password, :password_confirmation, :avatar
  	
+ 	has_secure_password
+
  	Email_Regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
  	validates :email, presence: true, format: {with: Email_Regex}, uniqueness: {case_sensitive: false}
