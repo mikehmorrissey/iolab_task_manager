@@ -11,3 +11,70 @@
  *= require_self
  *= require_tree .
  */
+
+html {background-image: url('http://iolabsinc.com/img_src/diagonal.gif');}
+
+.logo{ float: left;
+		margin-left: 4%;
+		margin-top: 0.5%}
+
+nav {
+	color: grey;
+	height: 1em;
+}
+
+/* Users Views styling */
+
+	/* new.html.erb  #ECF6FF*/
+section {
+	float: left;
+	border-radius: 1em;
+	margin-left: 20%;
+	margin-top: 10%;
+	background-color: #C2D6FF;
+	padding:1em;
+	padding-top: 0.4em
+	
+}
+
+h1 {font-family: 'Raleway', sans-serif; 
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-top: 0.25em;
+
+
+}
+
+.formfield input {
+	margin-top: 0.5em;
+	border-radius: 0.3em; 
+	font-size: 1.2em;
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 600;
+
+
+	}
+
+.label {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 400;
+	margin-top: 1em;
+
+
+
+}
+.file{
+	margin-top: 0.6em
+}
+
+.submit{
+	margin-top: 1.5em;
+	padding: 0.5em;
+	font-size: 1em;
+	border-radius: 0.5em;
+	background-color: white;
+	font-family: 'Raleway', sans-serif; 
+	border: 0.1em solid black
+}
+
+
