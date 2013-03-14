@@ -1,0 +1,31 @@
+
+<%= form_for(@user, :html => {:multipart => true}) do |f| %>
+      <% if @user.errors.any?%>
+            <% @user.errors.full_messages.each do |error| %>
+                  <li class="error"><%=error%></li>
+            <%end%>
+      <%end%>
+       <div class="formfield">  
+             <%= f.text_field :name, placeholder: 'Full Name' %>
+      </div>
+      <div class="formfield">
+            
+            <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+      <div class="formfield">
+            
+            <%= f.password_field :password, placeholder: 'Password' %>
+      </div>
+
+      <div class="formfield">
+           
+            <%= f.password_field :password_confirmation, placeholder: 'Confirmation' %>
+      </div>
+      <div class="filefield">
+            <div class="label"><%= f.label :avatar %></div>
+            <%= f.file_field :avatar, class: "file" %>
+      </div>
+      <div class="action">
+            <%= f.submit "Create Account" , class: "submit" %>
+      </div>
+<% end %>
