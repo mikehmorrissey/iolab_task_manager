@@ -14,8 +14,9 @@
 
 	<nav> 
 		<% unless yield(:nav) == 'hide'%>
-		<%= link_to "Profile", @user, class: "navlink"%><span class="navlink"> | </span> <%= link_to "Tasks", '#', class: "navlink"%>
-		<span class="navlink"> | </span> <%= link_to "Employees", 'users#index', class: "navlink" %>
+			<%= render 'left_nav'%>
+
+			<%= render 'right_nav'%>
 		<%end%>
 
 
