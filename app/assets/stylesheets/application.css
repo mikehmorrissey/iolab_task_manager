@@ -14,6 +14,7 @@
 
 html {background-image: url('http://iolabsinc.com/img_src/diagonal.gif');}
 
+a{text-decoration: none; color: black}
 .logo{ 	
 		margin-left: 4%;
 		margin-top: 0.5%}
@@ -33,7 +34,38 @@ nav {
 	margin-left: 1%
 	}
 
-.navright {float: right}
+
+.navlink:hover {
+
+transition: color 0.5s, ;
+-moz-transition: color 0.5s; /* Firefox 4 */
+-webkit-transition: color 0.5s; /* Safari and Chrome */
+-o-transition: color 0.5s; /* Opera */
+color:blue;
+
+}
+
+.menuitem{
+	float: right;
+	text-decoration: none; 
+	color:black;
+	font-family: 'Raleway', sans-serif; 
+	position: relative;
+	bottom: 0.5em;
+	
+	margin-right:1%;
+}
+
+.menuitem:hover {
+
+transition: color 0.5s, ;
+-moz-transition: color 0.5s; /* Firefox 4 */
+-webkit-transition: color 0.5s; /* Safari and Chrome */
+-o-transition: color 0.5s; /* Opera */
+color:blue;
+
+}
+
 /* Users Views styling */
 
 	/* new.html.erb  #ECF6FF*/
@@ -46,6 +78,9 @@ section {
 	padding:1em;
 	padding-top: 0.4em
 	
+}
+.newsection{
+	margin-top: 5%
 }
 
 h1 {font-family: 'Raleway', sans-serif; 
@@ -112,8 +147,43 @@ p{
 
 	margin-left: 6%;
 
-	
+	}
+
+
+
+
+/* index styles */
+
+.employee {
+	margin: 0;
+	margin-left: 35%;
+	margin-bottom: 1%;
+	clear: both;
+	width: 17em;
+}
+
+.indexemail {font-family: 'Raleway', sans-serif; margin-top: 3%}
+
+.indexname{margin-bottom: 3%
 
 }
+.indextitle {margin-left: 5%; margin-top: 5%}
+
+
+
+/*session#new styles*/
+
+.newemployee{
+	float: right;
+	
+	
+	font-family: 'Raleway', sans-serif;
+
+
+}
+
+
+
+
 
 
