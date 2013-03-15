@@ -1,0 +1,15 @@
+<%provide :title, "Employees"%>
+
+<h1 class='indextitle'>Employees</h1>
+
+<% @user.each do |user| %>
+  <section class = 'employee'>
+  		<header>
+  			<h1 class = 'indexname'> <%= link_to user.name, user%></h1>
+  		</header>
+  		<%=image_tag user.avatar, size: '100x100'%>
+  		<div class= 'indexemail'> <%= user.email%></div>
+  	
+
+	</section>
+<%end%>
