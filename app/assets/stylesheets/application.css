@@ -14,15 +14,26 @@
 
 html {background-image: url('http://iolabsinc.com/img_src/diagonal.gif');}
 
-.logo{ float: left;
+.logo{ 	
 		margin-left: 4%;
 		margin-top: 0.5%}
 
 nav {
-	color: grey;
-	height: 1em;
+	background-color: rgba(194, 214, 255, 0.5);
+	margin-top: 1.5em;
+	padding:1em;
+	margin-bottom: 1%;
 }
+.navlink {float: left; 
+	text-decoration: none; 
+	color:black;
+	font-family: 'Raleway', sans-serif; 
+	position: relative;
+	bottom:0.5em;
+	margin-left: 1%
+	}
 
+.navright {float: right}
 /* Users Views styling */
 
 	/* new.html.erb  #ECF6FF*/
@@ -75,6 +86,34 @@ h1 {font-family: 'Raleway', sans-serif;
 	background-color: white;
 	font-family: 'Raleway', sans-serif; 
 	border: 0.1em solid black
+}
+
+/* show styles */
+
+#showavatar {
+	margin-left: 5%;
+	margin-top:5%;
+	margin-bottom: 3%
+}
+
+
+
+p{
+	font-family: 'Raleway', sans-serif;
+
+	font-weight: bold;
+	font-size: 1em;
+
+	padding: 0.2em;
+
+	border-radius: 0.5em;
+
+	clear:both;
+
+	margin-left: 6%;
+
+	
+
 }
 
 
