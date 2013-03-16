@@ -13,6 +13,7 @@
  */
 
 html {background-image: url('http://iolabsinc.com/img_src/diagonal.gif');}
+div {font-family: 'Raleway', sans-serif; }
 
 a{text-decoration: none; color: black}
 .logo{ 	
@@ -185,10 +186,10 @@ p{
 
 /* note styling*/
 .notesform {
-	float: left:;
-	margin-left: 5%;
-	margin-top:  6%;
-	padding:1em;
+	float: left;
+	margin-left: 3%;
+	margin-top:  4%;
+	padding:2em;
 }
 .text_area {rows:1;
 	border-radius: 0.5em;
@@ -197,46 +198,72 @@ p{
 }
 
 .note {
-	border-radius: 0;
-	width:20em;
-	clear:both;
+	border-radius: 1em;
+	width:30em;
+	float :left;
+
 
 	
 	margin:0;
 	
-	margin-left:35%;
-	padding:1em;
-	padding-top: 0.4em;
-	border-bottom: 1em solid white;
+	margin-left:40%;
+	margin-bottom: 2%;
+
+	padding:1.5em;
+	padding-top: 0.7em;
+	padding-left:0.8em;
+
+	
 	
 }
 .content {
 	clear:both;
 	margin:0;
-	
-	width: 100%;
+	margin-top: 5%;
+	width: 90%;
 
 	height: 100%;
+	margin-right: 5%;
 	padding: 1em;
-	
+
 	vertical-align: top;
+	background-color: white;
+	border-radius:1em
+
+
 
 }
 
 .notefeedname {
-	font-size: 1em
+	font-size: 1em;
+	float:left;
+	margin-left: 3%;
+	position: relative;
+	top: 1.3em;
 
+}
+
+.noteav {
+	float: left;
+	border-radius: 1em;
+	margin-bottom: 3%;
 }
 
 .feedcontainer {
 	background-color: white;
 	padding: 2em;
+	clear:both;
+}
+.timeposted {
+	margin-top: 4%;
+	margin-left: 1%;
+	font-size: 0.8em;
+
 }
 
 
-.noteformcontainer { 
-	padding:1em;
-	background-color: white}
+
+
 
 
 
