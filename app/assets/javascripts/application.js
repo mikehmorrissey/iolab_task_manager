@@ -28,3 +28,21 @@ $(document).ready(function(){$('.text_area').blur(function(){
 });
 
 });
+
+
+ $(window).scroll (function ()
+    {
+        // what is the y position of the scroll?
+        var y = $(window).scrollTop();
+        // whether that's below the start of article?
+        if (y >=150)
+        {
+            $('.notesform').addClass('fixed');
+           
+        }
+        else
+        {
+            // otherwise, remove it
+            $('.notesform').removeClass('fixed');
+        }
+    });
