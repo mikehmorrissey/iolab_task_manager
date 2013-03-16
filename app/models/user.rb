@@ -2,6 +2,9 @@ class User < ActiveRecord::Base
   attr_accessible :email, :name, :password, :password_confirmation, :avatar
  	
  	has_secure_password
+ 	
+ 	has_many :notes
+
  	has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "iolabs_default.jpeg"
  	validates_attachment :avatar, :content_type => { :content_type => "image/jpeg" }, :size => { :in => 0..100.kilobytes }
 
