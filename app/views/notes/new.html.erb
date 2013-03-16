@@ -1,0 +1,41 @@
+<% provide :title, "Notes"%>
+
+
+<section class='notesform'>
+	<%= form_for(@note) do |f| %>
+      <% if @note.errors.any?%>
+            <% @note.errors.full_messages.each do |error| %>
+                  <li class="error"><%=error%></li>
+            <%end%>
+      <%end%>
+       <div class="formfield">  
+             <%= f.text_area :content, placeholder: 'note...', :rows => "1", class: 'text_area' %>
+              
+      </div>
+      
+      <div class="action">
+            <%= f.submit "Create Note" , class: "submit" %>
+      </div>
+<% end %>
+</section>
+
+
+
+	<% @feed.each do |i| %>
+  
+		<section class ='note'><header>
+     <span> <h1 class='notefeedname'><%= i.user %></h1>
+    </header>
+		<%= image_tag i.user.avatar, size: '70x70'%>
+  
+  </span>
+  <span class="content">
+    <%= i.content %>
+  </span>
+</section>
+ 
+		
+	<% end %>
+
+
+
