@@ -1,5 +1,5 @@
 <% provide :title, "Notes"%>
-
+<span>
 
 <section class='notesform'>
 	<%= form_for(@note) do |f| %>
@@ -19,23 +19,32 @@
 <% end %>
 </section>
 
-
+</span>
+<span>
 
 	<% @feed.each do |i| %>
   
 		<section class ='note'><header>
-     <span> <h1 class='notefeedname'><%= i.user %></h1>
-    </header>
-		<%= image_tag i.user.avatar, size: '70x70'%>
+     <span> 
+
+       <%= image_tag i.user.avatar, size: '70x70', class: 'noteav'%>
+
+
+      <h1 class='notefeedname'><%= i.user.name %></h1>
+   
+	
   
   </span>
-  <span class="content">
-    <%= i.content %>
-  </span>
+  <div class="content">
+    <%= i.content.html_safe %>
+  </div>
+  <div class ="timeposted">
+  Posted <%= time_ago_in_words(i.created_at) %> ago.
+  <div>
 </section>
  
 		
 	<% end %>
-
+</span>
 
 
