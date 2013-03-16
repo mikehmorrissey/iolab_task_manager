@@ -1,22 +1,28 @@
 class NotesController < ApplicationController
 
-	def show
-		@note = Note.new(params[:id])
+	def new
+		@note = Note.new
 		@feed = Note.all
+		
+		respond_to do |format|
+  		format.html
+  		format.js
+  	end
+
 
 	end
 	
    def create
-      @note = current_user.microposts.build(params[:note])
-      
+  	   
+      @note = current_user.notes.build(params[:note])
       if @note.save
-        render 'notes#show'
-      else
-        render 'notes#show'
-      end
-   
+  	 	 respond_to do |format|
+  			format.html {redirect_to new_note_path}
+  			format.js
+  		end
+	end
+      
     end
-
 
 
 
