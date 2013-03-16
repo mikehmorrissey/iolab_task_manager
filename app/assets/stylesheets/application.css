@@ -183,7 +183,60 @@ p{
 }
 
 
+/* note styling*/
+.notesform {
+	float: left:;
+	margin-left: 5%;
+	margin-top:  6%;
+	padding:1em;
+}
+.text_area {rows:1;
+	border-radius: 0.5em;
+		padding:0.9em;
 
+}
+
+.note {
+	border-radius: 0;
+	width:20em;
+	clear:both;
+
+	
+	margin:0;
+	
+	margin-left:35%;
+	padding:1em;
+	padding-top: 0.4em;
+	border-bottom: 1em solid white;
+	
+}
+.content {
+	clear:both;
+	margin:0;
+	
+	width: 100%;
+
+	height: 100%;
+	padding: 1em;
+	
+	vertical-align: top;
+
+}
+
+.notefeedname {
+	font-size: 1em
+
+}
+
+.feedcontainer {
+	background-color: white;
+	padding: 2em;
+}
+
+
+.noteformcontainer { 
+	padding:1em;
+	background-color: white}
 
 
 

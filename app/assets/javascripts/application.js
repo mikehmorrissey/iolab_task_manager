@@ -13,3 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(document).ready(function(){$('.text_area').focus(function(){
+	$(this).attr('rows', '8');
+});
+
+});
+
+$(document).ready(function(){$('.text_area').blur(function(){
+	if($(this).val().length == 0){
+		$(this).attr('rows', '1');
+	};
+});
+
+});
