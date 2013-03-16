@@ -1,11 +1,15 @@
 IolabsTaskManager::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :notes, only: [:new, :create]
 
   root to: 'Sessions#new'
   match '/signup' => 'Users#new'
   match '/sign_in' => 'Sessions#new'
   match '/signout',  to: 'sessions#destroy', via: :delete
+
+  match '/notes' => 'Notes#new'
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
