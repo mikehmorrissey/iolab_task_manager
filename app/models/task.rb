@@ -5,6 +5,9 @@ class Task < ActiveRecord::Base
   	validates val, presence: true
   end
 
+  belongs_to :user
+  belongs_to :company
+
   Email_Regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
  validates :email, presence: true, format: {with: Email_Regex}
