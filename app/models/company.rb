@@ -4,5 +4,7 @@ class Company < ActiveRecord::Base
 
   validates :name, presence: true
 
-  
+  Email_Regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+ 	validates :email, format: {with: Email_Regex}
 end
