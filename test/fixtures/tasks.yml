@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  due_date: 2013-03-16
+  description: MyText
+  assigned_to: MyString
+  company_name: MyString
+  contact_name: MyString
+  phone: 1
+  email: MyString
+  user_id: 1
+
+two:
+  due_date: 2013-03-16
+  description: MyText
+  assigned_to: MyString
+  company_name: MyString
+  contact_name: MyString
+  phone: 1
+  email: MyString
+  user_id: 1
